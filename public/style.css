@@ -1,0 +1,97 @@
+/* Base styling */
+body {
+    background-color: black;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Typography */
+h1, h3 {
+    letter-spacing: 0.1em;
+    text-transform: lowercase;
+}
+
+p {
+    color: orangered;
+    font-size: 0.95rem;
+}
+
+/* Links and buttons */
+a {
+    text-align: center;
+    text-decoration: none;
+    color: orangered;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.btn-outline-dark {
+    color: white;
+    border-color: orangered;
+}
+
+.btn-outline-dark:hover {
+    background-color: orangered;
+    color: black;
+    border-color: orangered;
+}
+
+/* Posts */
+ul.posts {
+    padding: 0;
+}
+
+ul.posts li {
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-bottom: 1px solid #444;
+    padding: 1rem 0;
+}
+
+/* Form styling */
+form input.form-control,
+form input.form-control-plaintext {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid orangered;
+    color: white;
+    border-radius: 0;
+    font-size: 0.95rem;
+}
+
+form input.form-control:focus {
+    background-color: transparent;
+    border-color: orange;
+    box-shadow: none;
+    color: white;
+}
+
+/* Button */
+form button.btn.btn-warning {
+    background-color: orangered;
+    border: none;
+    color: black;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+}
+
+form button.btn.btn-warning:hover {
+    background-color: orange;
+    color: black;
+}
+
+/* Optional muted text fix */
+.text-muted {
+    color: #ccc !important;
+}
+
+
+/* h1, h2, h3{
+    font: white;
+} */

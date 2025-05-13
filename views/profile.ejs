@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>p a s s i o n . f r u i t</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="/public/avant-garde.css">
+</head>
+<body>
+
+<div class="container py-5">
+  <div class="row">
+    <div class="col-sm-6">
+
+      <h1 class="mb-4">p l a y s p a c e</h1>
+      <p class="text-muted">p a s s i o n . f r u i t</p>
+      <p class="text-muted">art inspires more art — let’s see where inspiration takes you </p>
+
+      <div class="mt-4">
+        <a href="/inspo.html" class="avant-link me-3"> i n s p i r a t i o n</a>
+        <a href="/public/vid.html" class="avant-link me-3">t h e a t e r</a>
+        <a href="/logout" class="avant-link">e x i t</a>
+      </div>
+
+      <div class="mt-5">
+        <h3 class="mb-3">i n f i n i t e</h3>
+        <p class="text-muted">look around you</p>
+        <ul class="list-unstyled">
+          <% for (let i = 0; i < posts.length; i++) { %>
+            <li class="py-2 border-bottom border-secondary">
+              <strong><%= posts[i].name %></strong><br>
+              <span><%= posts[i].msg %></span>
+            </li>
+          <% } %>
+        </ul>
+      </div>
+
+      <div class="mt-5">
+        <h3 class="mb-3">i n t i m a t e</h3>
+        <p class="text-muted">give it form</p>
+        <% if (user.local.email) { %>
+          <form action="/posts" method="POST" class="mt-3">
+            <div class="mb-3">
+              <input type="text" readonly class="form-control border-0 border-bottom rounded-0 px-0 avant-input" value="<%= user.local.email %>" name="name">
+            </div>
+            <div class="mb-3">
+              <input type="text" name="msg" placeholder="post" class="form-control border-0 border-bottom rounded-0 px-0 avant-input" required>
+            </div>
+            <button type="submit" class="btn btn-link px-0 avant-button">
+              <i class="fas fa-star"></i>
+            </button>
+          </form>
+        <% } %>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
