@@ -21,7 +21,7 @@ const configDB = require('./config/database');
 
 // Express app
 const app = express();
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 6080;
 
 // MongoDB Connection
 mongoose.connect(configDB.url, (err, database) => {
