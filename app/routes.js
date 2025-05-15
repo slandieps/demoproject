@@ -1,3 +1,5 @@
+console.log('✅ routes.js loaded');
+
 module.exports = function(app, passport, db) {
 
     // normal routes ===============================================================
@@ -37,6 +39,10 @@ module.exports = function(app, passport, db) {
             res.render('stream-test.ejs');
         });
     
+    //theater routes ====================================================================
+   app.get('/theater', (req, res) => {
+    res.render('theater.ejs', { user: req.user });
+        }); 
     
     // message board routes ===============================================================
     
@@ -47,7 +53,8 @@ module.exports = function(app, passport, db) {
             res.redirect('/profile')
           })
         })
-    
+      
+
     // AUTH ROUTES REMAIN UNCHANGED BELOW ==============================================
     
         app.get('/login', function(req, res) {

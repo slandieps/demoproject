@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Bootstrap + Font Awesome -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="/public/avant-garde.css" />
+
+  <title>i n s p i r a t i o n</title>
+</head>
+<body>
+
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-sm-8">
+
+        <h1 class="mb-3">i n s p i r a t i o n</h1>
+        <span class="mb-4 d-block">~``~</span>
+
+        <!-- Form to request a new random artwork -->
+        <form action="/randomize" method="POST">
+          <button type="submit" class="avant-button mb-4">ready, set, go!</button>
+        </form>
+
+        <span class="mb-4 d-block">~``~</span>
+
+        <hr class="mb-4">
+
+        <!-- Display the image if available -->
+        <div class="image mb-4">
+          <% if (art && art.imageUrl) { %>
+            <img src="<%= art.imageUrl %>" alt="art image" class="img-fluid" />
+          <% } else { %>
+            <p class="text-muted">No image available</p>
+          <% } %>
+        </div>
+
+        <!-- Display the artwork details -->
+        <div class="data">
+          <ul class="list-unstyled">
+            <li class="artwork" id="data-01">
+              <strong>Department:</strong> <%= art.department || 'Art department information missing' %>
+            </li>
+            <li class="artwork" id="data-02">
+              <strong>Object Type:</strong> <%= art.objectType || 'Object type information missing' %>
+            </li>
+            <li class="artwork" id="data-03">
+              <strong>Title:</strong> <%= art.title || 'Title information missing' %>
+            </li>
+            <li class="artwork" id="data-04">
+              <strong>Culture:</strong> <%= art.culture || 'Culture information missing' %>
+            </li>
+            <li class="artwork" id="data-05">
+              <strong>Period:</strong> <%= art.period || 'Period information missing' %>
+            </li>
+            <li class="artwork" id="data-06">
+              <strong>Excavation:</strong> <%= art.excavation || 'Excavation information missing' %>
+            </li>
+            <li class="artwork" id="data-08">
+              <strong>Medium:</strong> <%= art.medium || 'Medium information missing' %>
+            </li>
+            <li class="artwork" id="data-09">
+              <strong>Dimensions:</strong> <%= art.dimensions || 'Dimensions information missing' %>
+            </li>
+            <li class="artwork" id="data-10">
+              <strong>Country of Origin:</strong> <%= art.country || 'Country information missing' %>
+            </li>
+            <li class="artwork" id="data-11">
+              <strong>Rights and Reproduction:</strong> <%= art.rights || 'Rights information missing' %>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="/public/index.js"></script>
+</body>
+</html>
+

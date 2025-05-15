@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Passion Fruit Theater</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/public/avant-garde.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+  <div class="container py-5 fade-in">
+    <h1 class="mb-4">t h e a t e r</h1>
+    <p class="text-muted">p a s s i o n . f r u i t</p>
+    <a href="/profile" class="avant-button mt-3 d-inline-block"> ← f e e d </a>
+    <h2 class="text-center">[ f o r ] . i n t e n t i o n a l . v i e w</h2>
+    <br>
+
+    <div class="ratio ratio-16x9 mb-5">
+      <iframe
+        id="theaterPlayer" 
+        src="https://www.youtube.com/playlist?list=PLDNd4Z2CqFz075-utTDZdl_WdVilGVD7n" 
+        title="Passion Fruit Playlist"
+        class="w-100 ratio ratio-16x9"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <blockquote class="blockquote text-center">
+      <h3 class="mb-4">w i s d o m</h3>
+      <p id="quoteBox" class="mb-0 fst-italic text-muted"></p>
+    </blockquote>
+
+    <p class="text-center text-muted fst-italic">
+      Use the playlist menu in the top-right to explore more.
+    </p>
+  </div>
+
+  <script src="js/theater.js"></script>
+</body>
+</html>

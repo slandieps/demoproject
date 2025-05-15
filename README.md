@@ -5,8 +5,6 @@ Passion Fruit is a web application born from my desire for spontaneity and deepe
 
 1. Clone repo
 2. Run `npm install`
-3. run OpenVidu Docker Server: https://openvidu.io/latest/docs/tutorials/application-server/node/#1-run-openvidu-server 
-4. `docker compose up`
 
 ## Usage
 

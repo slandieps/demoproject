@@ -99,6 +99,7 @@ app.post('/livekit/webhook', async (req, res) => {
 
 // =====================
 // Routes
+
 // =====================
 
 // Serve the vid.html file from the public directory

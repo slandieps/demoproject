@@ -1,45 +1,60 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
-    <link rel="stylesheet" href="main.css">
-    <title>Inspiration Randomizer</title>
+  <meta charset="UTF-8">
+  <title>👁️ i n s p i r a t i o n</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="/avant-garde.css">
 </head>
-<body>
-    <h1>i n s p i r a t i o n</h1>
-    <span> ~``~ </span>
+<body class="inspo-page">
 
-    <button type="button" name="button">ready, set, go!</button>
-    <span> ~``~ </span>
-    <br>
-    <hr>
-<div>
+  <div class="container py-5 inspo-overlay">
+    <div class="row justify-content-start">
+      <div class="col-md-6 col-lg-4">
 
-    <div class="image">
-        <img src="" alt="">
+        <h1 class="mb-4 inspo-title">i n s p i r a t i o n</h1>
+
+        <p class="inspo-subtitle">
+          art will find you — press the button to begin
+        </p>
+
+        <div class="mt-3">
+          <a href="/profile" class="return-link"> ← f e e d</a>
+        </div>
+
+        <div class="mt-4">
+          <button type="button" class="avant-button" name="button">seek new vision</button>
+          <div id="loading" class="breathing">pulling from the archives...</div>
+        </div>
+
+        <div class="mt-5 image text-start">
+          <img src="" alt="Artwork image" class="img-fluid mb-4">
+        </div>
+
+        <div class="data">
+          <ul class="list-unstyled text-start">
+            <li class="mb-3" id="data-01">Art Department</li>
+            <li class="mb-3" id="data-02">Object Type</li>
+            <li class="mb-3" id="data-03">Artwork Title</li>
+            <li class="mb-3" id="data-04">Culture of Origin</li>
+            <li class="mb-3" id="data-05">Art Period</li>
+            <li class="mb-3" id="data-06">Excavation Information</li>
+            <li class="mb-3" id="data-07">Additional Info</li>
+            <li class="mb-3" id="data-08">Art Medium</li>
+            <li class="mb-3" id="data-09">Artwork Dimensions</li>
+            <li class="mb-3" id="data-10">Country of Origin</li>
+            <li class="mb-3" id="data-11">Rights and Reproduction</li>
+          </ul>
+        </div>
+
+      </div>
     </div>
+  </div>
 
-    <div class="data">
-        <ul>
-            <li class="artwork" id="data-01">art department</li>
-            <li class="artwork" id="data-02">object type</li>
-            <li class="artwork" id="data-03">artwork title</li>
-            <li class="artwork" id="data-04">culture of origin</li>
-            <li class="artwork" id="data-05">art period</li>
-            <li class="artwork" id="data-06">excavation information</li>
-            <li class="artwork" id="data-08">art medium</li>
-            <li class="artwork" id="data-09">artwork dimensions</li>
-            <li class="artwork" id="data-10">country of origin</li>
-            <li class="artwork" id="data-11">rights and reproduction</li>
-        </ul>
-    </div>
-</div>
-    
-    <script src="index.js"></script> 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>
-
 
